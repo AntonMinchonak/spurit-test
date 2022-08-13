@@ -1,0 +1,109 @@
+/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+
+.block {
+    margin: 0 auto;
+    max-width: 1180px;
+    color: #2F2F2F;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.block__title {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.card-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex:1 1;
+    border-radius: 12px;
+    box-shadow: 0 0 45px -4px rgba(0, 0, 0, 0.18);
+    overflow: hidden;
+    flex-basis: 300px;
+}
+
+.card__image {
+    background: url("./image.jpg") no-repeat;
+    background-size: cover;
+    height: 213px;
+    box-sizing: border-box;
+    display: flex;
+    gap:16px;
+    align-items: flex-start;
+    padding: 16px;
+}
+
+.card__tag {
+    padding: 0 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    background-color: #FDCFF3;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.card__tag--yellow {
+    background-color: #FFCF56;
+}
+
+.card__content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    height: auto;
+}
+
+.card__title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.card__description {
+    font-size: 16px;
+    line-height: 1.5em;
+    margin:0;
+}
+
+.card__button {
+    margin: auto 24px 24px;
+    color:#42940F;
+    font-size:18px;
+    font-weight: 900;
+    border: 2px solid #42940F;
+    border-radius: 8px;
+    background: none;
+    text-transform: uppercase;
+    padding: 9px;
+    cursor: pointer;
+}
+
+.card__button:hover {
+    background-color: #42940F;
+    color:white;
+    border-color: #42940F;
+}
+
+.card__button:active {
+    background-color: #1F5200;
+    color:white;
+    border-color: #1F5200;
+}
+
+.card__button:disabled {
+    border: none;
+    background-color: #4E4E4E;
+    color: white;
+}
