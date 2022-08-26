@@ -5,7 +5,6 @@ const showBtn = document.querySelector(".collapsible__action--hidden");
 const popupWrap = document.querySelector(".collapsible__content");
 const popup = document.querySelector(".collapsible__content p");
 const time = 300;
-let delay = time - 50;
 
 hideBtn.style.display = "none";
 popup.style.transform = "translateY(-400px)";
@@ -32,8 +31,6 @@ animation.pause();
 showBtn.onclick = () => {
   animation.playbackRate = 1;
   animation.play();
-//   setTimeout(() => { animation.pause() }, delay);
-    
   showBtn.style.display = "none";
   hideBtn.style.display = "block";
 };
@@ -41,7 +38,6 @@ showBtn.onclick = () => {
 hideBtn.onclick = () => {
   animation.playbackRate = -1;
   animation.play();
-//   setTimeout(() => { animationBack.pause() }, delay);
   showBtn.style.display = "block";
   hideBtn.style.display = "none";
 };
